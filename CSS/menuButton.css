@@ -1,0 +1,82 @@
+.dropButton {
+    width: 35px;
+    height: 4px;
+    background-color: #fff;
+    margin: 6px 0;
+}
+
+.dropButton:hover, .dropButton:focus {
+    background-color: #fff;
+    color: #367BB3;
+
+}
+
+.dropDownMenu {
+    float: right;
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.dropDownMenu:hover .dropCont {
+    display: block;
+}
+
+.dropCont {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #367BB3;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+    width: 250px;
+}
+
+.dropCont a {
+    color: #367BB3;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropCont a:hover {
+    background-color: #367BB3;
+    color: #fff;
+}
+
+.menuTitle {
+    color: #fff;
+    background: #367BB3;
+    text-align: center;
+    margin-top: 0;
+    padding: 15px 0 15px 0;
+}
+
+button .logoutButton {
+    color: #fff;
+    background: #367BB3;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.show {display:block;}
+
+@media screen and (max-width: 600px){
+    .dropDownMenu {
+        margin-right: 15px;
+    }
+
+    .show {display:block;}
+
+}
